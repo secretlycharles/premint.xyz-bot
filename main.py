@@ -15,7 +15,7 @@ import toml
 import time
 
 
-# automatic minter for baidjeet#0001
+# automatic minter
 def pre_minter(settings, logger, ether):
     # instantiate etherscan api wallet check for preminter
     status, wrapper_response, wallet = ether.getWalletBalance(token=settings['pre-minter']['minting_wallet'])
